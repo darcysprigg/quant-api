@@ -12,5 +12,5 @@ app.add_middleware(
 )
 
 @app.get("/")
-def root():
-    return {"message": "backend is running"}
+def root(ticker: str):
+    return {"Used ticker": ticker}
